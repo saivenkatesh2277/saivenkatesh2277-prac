@@ -10,7 +10,7 @@ module "ec2_instance" {
 module "network" {
   source = "./modules/vpc"
 
-  vpc_name            = var.vpc_name
+  vpc_name            = saivpc
   vpc_cidr            = var.vpc_cidr
   availability_zones  = var.availability_zones
   private_subnets_cidr = var.private_subnets_cidr
